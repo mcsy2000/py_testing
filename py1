@@ -1,0 +1,54 @@
+#IMPORTS
+import itertools
+
+#converts IP address to Binary
+############################################################
+ip_addr = input("Please enter IP to convert to Decimal: ")
+
+
+print ("the IP address inputted {}" .format(ip_addr))
+print (ip_addr)
+print ('---------------------------------------')
+print ('---------------------------------------')
+
+first_oct = bin(int(ip_addr.split('.')[0]))
+second_oct = bin(int(ip_addr.split('.')[1]))
+third_oct = bin(int(ip_addr.split('.')[2]))
+forth_oct = bin(int(ip_addr.split('.')[3]))
+
+
+print ('THIS IS YOUR IP IN BINARY')
+print (first_oct,second_oct,third_oct,forth_oct)
+print ('---------------------------------------')
+
+join1 = ",".join(map(str,[first_oct,second_oct,third_oct,forth_oct]))
+print (join1)
+
+#Converts Binary to IP address
+############################################################
+
+ip_convert1 = int(first_oct,2)
+ip_convert2 = int(second_oct,2)
+ip_convert3 = int(third_oct,2)
+ip_convert4 = int(forth_oct,2)
+
+
+print (ip_convert1,ip_convert2,ip_convert3,ip_convert4)
+print ('---------------------------------------')
+
+# HEX
+############################################################s
+
+print ('THIS IS YOUR IP IN HEX')
+ip_convert1h = int(first_oct,16)
+ip_convert2h = int(second_oct,16)
+ip_convert3h = int(third_oct,16)
+ip_convert4h = int(forth_oct,16)
+
+print (ip_convert1h,ip_convert2h,ip_convert3h,ip_convert4h)
+print ('---------------------------------------')
+
+
+
+
+
